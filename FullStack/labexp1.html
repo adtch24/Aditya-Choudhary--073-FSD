@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ABES BOOK STORE</title>
+</head>
+<body bgcolor="skyblue" align="center">
+  <div >
+    <h1 align="center">📚 ONLINE BOOK STORE</h1>
+    <table align="center" cellspacing="20">
+        <div align="center">
+            <a href="#" onclick="load('home')">HOME</a>      | |
+            <a href="#" onclick="load('login')">LOGIN/SIGNUP</a>   |     |
+            <a href="#" onclick="load('register')">REGISTER</a>     | |
+            <a href="#" onclick="load('catalogue')">SUBJECTS</a>   | |
+            <a href="#" onclick="load('cart')">YOUR CART</a>
+          </div>
+    </table>
+    <centre>
+    <div style="display:flex; justify-content:center; align-items:flex-start; gap:40px; margin-top:10px;">
+  <div style="width:15%;background:cadetblue;padding:10px;">
+    <h3>SELECT YOUR BRANCH</h3>
+    <a href="#" onclick="load('cse')">CSE</a><br>
+    <a href="#" onclick="load('ece')">ECE</a><br>
+    <a href="#" onclick="load('eee')">Mech</a><br>
+    <a href="#" onclick="load('civil')">IT</a>
+  </div>
+  <div id="content" style="width:75%;padding:5px;">
+    <div style="background:cadetblue;padding:10px;">
+      <h2>WELCOME DEAR STUDENTS</h2>
+      <p>THIS IS AN ONLINE BOOK STORE OF ABES ENGINEERING COLLEGE GHAZIABAD. HERE YOU GET ALL THE BOOKS FOR YOUR ACADEMICS.</p>
+      <h3>KEEP LEARNING , KEEP HUSTLING!!</h3>
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+ 
+  <script>
+    function load(p){
+      let pages={
+        home:"<h2>Welcome</h2><p>WELCOME TO THE BOOK STORE</p>",
+        login:"<h2>Login</h2>ADMISSION NO.:<input><br>PASSWORD:<input type=password>",
+        register:"<h2>Register</h2>Name:<input><br>Email:<input><br>Roll no.:<input><br>Branch-Section:<input>",
+        catalogue:"<h2>Catalogue</h2><ul><li>CSE Books</li><li>ECE Books</li><li>Mech Books</li><li>IT Books</li/</ul>",
+        cart:"<h2>Your Cart</h2><p>No items.</p>",
+        cse:"<h2>CSE Books</h2><p>DS, COA...</p>",
+        ece:"<h2>ECE Books</h2><p>Electronics, Signals...</p>",
+        mech:"<h2>Mech Books</h2><p>Machines, Tech...</p>",
+        IT:"<h2>IT Books</h2><p>DS, TC...</p>"
+      };
+      document.getElementById("content").innerHTML=pages[p];
+    }
+  </script>
+</body>
+</html>

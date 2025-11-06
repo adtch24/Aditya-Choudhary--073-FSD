@@ -1,0 +1,30 @@
+.body{
+
+}.container{
+  border: 2px solid black; 
+  display: flex;  
+  justify-content: center;
+  gap: 20px;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    position: relative;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative ;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+}
+.skicky{
+    background-color: yellow;
+
+}
