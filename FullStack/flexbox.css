@@ -1,0 +1,32 @@
+body{
+display: flex;
+border: 2px solid black;
+justify-content: space-around;
+min-height: 500px;
+align-items: center;
+}
+.box1{
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+}
+.box2{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(220, 217, 5);
+}
+.box3{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(3, 71, 70);
+}
+.box4{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(116, 4, 4);
+}
+.box5{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(243, 48, 4);
+}
