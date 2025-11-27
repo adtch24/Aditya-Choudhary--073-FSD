@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta-name="viewport" content="width=device-width, ini al-scale=1.0"> 
+    <title>Student Survey</title> 
+ 
+    <style> 
+        body { 
+            background-size: cover;  
+            font-family: Arial, sans-serif; 
+            color: white; 
+            text-align: center; 
+            padding: 20px; 
+        } 
+        .header { 
+            background-size: contain; 
+            padding: 20px; 
+            font-size: 34px; 
+            font-family: Verdana, sans-serif; 
+            border-radius: 10px; 
+        } 
+        .survey-box { 
+            width: 75%; 
+            margin: auto; 
+            padding: 5px; 
+            background-color: skyblue; 
+            border-radius: 15px; 
+            border: 3px solid white; 
+            font-size: 20px; 
+        } 
+        input, select, textarea { 
+            width: 80%; 
+            padding: 12px; 
+            border-radius: 10px; 
+            border: none; 
+            margin: 12px; 
+            font-size: 16px; 
+        } 
+        button { 
+            padding: 12px 30px; 
+            font-size: 20px; 
+            border-radius: 10px; 
+            border: none; 
+            cursor: pointer;  
+        } 
+        a:link { color: cyan; } 
+        a:visited { color: orange; } 
+        a:hover {  
+            color: lime; 
+            background-color: rgba(255,255,255,0.2); 
+        } 
+        
+        .rate-row { 
+            display: flex; 
+            justify-content: center; 
+            gap: 60px; 
+            align-items: center; 
+            margin-top: 10px; 
+        } 
+        .rate-le input { 
+            display: block; 
+            margin: 12px 0; 
+        } 
+ 
+        .rate-right label { 
+            display: block; 
+            margin: 12px 0; 
+            font-size: 20px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="header"> 
+        Student Feedback Survey 
+    </div> 
+    <br><br> 
+    <div class="survey-box"> 
+        <form> 
+            <p><b>Participant Name</b></p> 
+            <input type="text" placeholder="Enter your full name"> 
+            <p><b>Details</b></p> 
+            <input type="text" placeholder="Enter Details"> 
+ 
+            <p><b>State</b></p> 
+            <select> 
+                <op on selected disabled>Select Branch</op on> 
+                <op on>Bihar</op on> 
+                <op on>Up</op on> 
+                <op on>goa</op></op on> 
+                <op on>haryana</op on> 
+                <op on>karnataka</op on> 
+                <op on>tamil nadu</op on> 
+            </select> 
+ 
+            <p><b>Age Group</b></p> 
+            <select> 
+                <op on selected disabled>Select Year</op on> 
+                <op on>less than 18</op on> 
+                <op on>18 - 25</op on> 
+                <op on>25 - 45</op on> 
+                <op on>above 45</op on> 
+            </select> 
+ 
+            <p><b>Rate Overall College Experience</b></p> 
+ 
+            <div class="rate-row"> 
+                <div class="rate-le "> 
+                    <input type="radio" name="rate" value="excellent"> 
+                    <input type="radio" name="rate" value="good"> 
+                    <input type="radio" name="rate" value="average"> 
+                    <input type="radio" name="rate" value="poor"> 
+                </div> 
+ 
+                <div class="rate-right"> 
+                    <label>Excellent</label> 
+                    <label>Good</label> 
+                    <label>Average</label> 
+                    <label>Poor</label> 
+                </div> 
+            </div> 
+ 
+            <p><b>Any Sugges ons</b></p> 
+            <textarea rows="4" placeholder="Write your sugges ons here..."></textarea> 
+ 
+            <br><br> 
+            <bu on type="submit">Submit</bu on> 
+ 
+            <br><br> 
+            <a href="home.html">Back to Home</a> 
+ 
+        </form> 
+    </div> 
+ 
+</body> 
+</html>

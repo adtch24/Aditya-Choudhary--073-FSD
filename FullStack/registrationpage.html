@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>experiment 5</title> 
+    <style> 
+        input{ 
+            text-align: center; 
+        } 
+    </style> 
+</head> 
+<body style="text-align: center; background-color: #87CEEB;">
+    <h2>Registration Form</h2>
+    <form onsubmit="return validateForm()">
+        <p>Full Name:- <input type="text" id="fname" placeholder="Full Name" required></p> 
+        <p>Age:- <input type="text" placeholder="age"></p> 
+        <p>Address:- <input type="text" placeholder="Address"></p> 
+        <p>Password:- <input type="password" id="password" placeholder="Password" required minlength="6"></p> 
+        <p>Phone Number:- <button type="button">+91</button><input type="number" placeholder="Mobile Number"></p> 
+        <p>E-mail:- <input type="email" placeholder="e-mail Id"></p> 
+        <p>Date of Birth:- <input type="date"></p> 
+        <p>Preferred Language:-</p> 
+        <input type="radio" id="English" name="Language" value="English">English 
+        <input type="radio" id="Hindi" name="Language" value="Hindi">Hindi 
+        <br><br>
+        <button type="submit">Submit</button> 
+    </form>
+
+  <script> 
+    function validateForm() { 
+        let name = document.getElementById("fname").value.trim(); 
+        let password = document.getElementById("password").value.trim(); 
+        let email = document.getElementById("email").value.trim(); 
+        let phone = document.getElementById("mobile").value.trim(); 
+        let namePattern = /^[A-Za-z\s]+$/; 
+        if (!name.match(namePattern) || name.length < 6) { 
+            alert("Name should contain only alphabets and be at least 6 characters long."); 
+            return false; 
+        } 
+        if (password.length < 6) { 
+            alert("Password should be at least 6 characters long."); 
+            return false; 
+        } 
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+        if (!email.match(emailPattern)) { 
+            alert("Please enter a valid email address (e.g., name@domain.com)."); 
+            return false; 
+        } 
+        let phonePattern = /^[0-9]{10}$/; 
+        if (!phone.match(phonePattern)) { 
+            alert("Phone number must contain exactly 10 digits."); 
+            return false; 
+        } 
+        alert("Form submi ed successfully!"); 
+        return true; 
+    } 
+    </script>
+</body> 
+</html>
